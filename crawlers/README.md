@@ -1,4 +1,6 @@
-Parte do trabalho na Idwall inclui desenvolver *crawlers/scrapers* para coletar dados de websites.
+# Desafio 2: Crawlers
+
+Parte do trabalho na IDwall inclui desenvolver *crawlers/scrapers* para coletar dados de websites.
 Como nós nos divertimos trabalhando, às vezes trabalhamos para nos divertir!
 
 O Reddit é um... bom, é difícil de explicar. O importante é que o Reddit é um website de entretenimento e muito frequentado por procrastinadores :)
