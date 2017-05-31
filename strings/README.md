@@ -29,13 +29,13 @@ of God was hovering over the waters.
 ```
 
 ```
-And  God said, "Let there be light," and
-there  was light. God saw that the light
-was  good, and  he separated  the  light
-from  the darkness. God called the light
-"day,"   and  the   darkness  he  called
-"night."  And  there  was  evening,  and
- there  was  morning  -  the  first  day.
+And God said, "Let there be light," and
+there was light. God saw that the light
+was good, and he separated the light
+from the darkness. God called the light
+"day," and the darkness he called
+"night." And there was evening, and
+there was morning - the first day.
  ```
 
 ### Parte 2 (Intermediário) - limite 40 caracteres
