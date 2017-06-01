@@ -21,7 +21,7 @@ comprimento e seja capaz de gerar os outputs dos desafios abaixo.
 Se preferir, pode utilizar um texto de input de sua preferência.
 
 ### Parte 1 (Básico) - limite 40 caracteres
-Você deve seguir o exemplo de output [deste arquivo](https://github.com/idwall/desafios/blob/master/strings/output-parte2.txt), onde basta o texto possuir, no máximo, 40 caracteres por linha.
+Você deve seguir o exemplo de output [deste arquivo](https://github.com/idwall/desafios/blob/master/strings/output_parte1.txt), onde basta o texto possuir, no máximo, 40 caracteres por linha.
 
 ### Parte 2 (Intermediário) - limite 40 caracteres
-O exemplo de output está [neste arquivo](https://github.com/idwall/desafios/blob/master/strings/output-parte2.txt), onde alm de o arquivo possuir, no máximo, 40 caracteres por linha, o texto deve estar **justificado**.
+O exemplo de output está [neste arquivo](https://github.com/idwall/desafios/blob/master/strings/output-parte2.txt), onde além de o arquivo possuir, no máximo, 40 caracteres por linha, o texto deve estar **justificado**.
