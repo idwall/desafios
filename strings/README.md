@@ -18,7 +18,7 @@ comprimento e seja capaz de gerar os outputs dos desafios abaixo.
 
 `And God said, "Let there be light," and there was light. God saw that the light was good, and he separated the light from the darkness. God called the light "day," and the darkness he called "night." And there was evening, and there was morning - the first day.`
 
-Se preferir, pode utilizar um texto de input de sua preferência.
+Se quiser, pode utilizar um texto de input de sua preferência.
 
 ### Parte 1 (Básico) - limite 40 caracteres
 Você deve seguir o exemplo de output [deste arquivo](https://github.com/idwall/desafios/blob/master/strings/output_parte1.txt), onde basta o texto possuir, no máximo, 40 caracteres por linha.
