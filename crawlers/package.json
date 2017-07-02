@@ -1,0 +1,19 @@
+{
+  "name": "crawlers",
+  "version": "1.0.0",
+  "description": "Parte do trabalho na IDwall inclui desenvolver *crawlers/scrapers* para coletar dados de websites.\r Como nós nos divertimos trabalhando, às vezes trabalhamos para nos divertir!",
+  "main": "crawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0",
+    "request": "^2.81.0",
+    "url-parse": "^1.1.9"
+  }
+}
