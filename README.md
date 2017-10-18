@@ -5,12 +5,11 @@ Nesta fase você pode escolher pelo menos um dos desafios e em qual linguagem ir
 
 Não há diferença de testes para diferentes níveis de profissionais, porém o teste será avaliado com diferentes critérios, dependendo do perfil da vaga.
 
-Escolha um dos desafios abaixo (ou os dois!):
 1. [Manipulação de strings](https://github.com/idwall/desafios/tree/master/strings)
 2. [Crawlers](https://github.com/idwall/desafios/tree/master/crawlers)
 
 ## Como entregar estes desafios
-Você deve forkar este projeto e fazer o *push* no seu próprio repositório e enviar o link para _jobs@idwall.co_ junto com seu LinkedIn atualizado.  
+Você deve forkar este projeto e fazer o *push* no seu próprio repositório e enviar o link para _jobs@idwall.co_ ou para o email do recrutador, junto com seu LinkedIn atualizado.  
 
 A implementação deve ficar na pasta correspondente ao desafio. Fique à vontade para adicionar qualquer tipo de conteúdo que julgue útil ao projeto, alterar/acrescentar um README com instruções de como executá-lo, etc.
 
