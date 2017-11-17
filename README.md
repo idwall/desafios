@@ -1,7 +1,7 @@
 # Desafios IDwall
 
 Aqui estão os desafios para a primeira fase de testes de candidatos da IDwall.  
-Nesta fase você pode escolher pelo menos um dos desafios e em qual linguagem irá implementar (a não ser que um de nossos colaboradores lhe instrua a utilizar uma linguagem específica).  
+Escolha em qual linguagem irá implementar (a não ser que um de nossos colaboradores lhe instrua a utilizar uma linguagem específica).  
 
 Não há diferença de testes para diferentes níveis de profissionais, porém o teste será avaliado com diferentes critérios, dependendo do perfil da vaga.
 
