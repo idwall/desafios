@@ -12,7 +12,7 @@ public abstract class StringFormatter {
     }
 
     /**
-     * It receives a text and should format this text
+     * It receives a text and should return it formatted
      *
      * @param text
      * @return
