@@ -1,7 +1,7 @@
 # Desafios IDwall
 
-Aqui estão os desafios para a primeira fase de testes de candidatos da IDwall.  
-Escolha em qual linguagem irá implementar (a não ser que um de nossos colaboradores lhe instrua a utilizar uma linguagem específica).  
+Aqui estão os desafios para a primeira fase de testes de candidatos da IDwall.
+Escolha em qual linguagem irá implementar (a não ser que um de nossos colaboradores lhe instrua a utilizar uma linguagem específica).
 
 Não há diferença de testes para diferentes níveis de profissionais, porém o teste será avaliado com diferentes critérios, dependendo do perfil da vaga.
 
@@ -9,11 +9,11 @@ Não há diferença de testes para diferentes níveis de profissionais, porém o
 2. [Crawlers](https://github.com/idwall/desafios/tree/master/crawlers)
 
 ## Como entregar estes desafios
-Você deve forkar este projeto e fazer o *push* no seu próprio repositório e enviar o link para _jobs@idwall.co_ ou para o email do recrutador, junto com seu LinkedIn atualizado.  
+Você deve forkar este projeto e fazer o *push* no seu próprio repositório e enviar o link para _jobs@idwall.co_ ou para o email do recrutador, junto com seu LinkedIn atualizado.
 
 A implementação deve ficar na pasta correspondente ao desafio. Fique à vontade para adicionar qualquer tipo de conteúdo que julgue útil ao projeto, alterar/acrescentar um README com instruções de como executá-lo, etc.
 
-**Obs.:** Você não deve fazer um Pull Request para este projeto! 
+**Obs.:** Você não deve fazer um Pull Request para este projeto!
 
 ## Carreira IDwall
 
