@@ -32,8 +32,4 @@ O exemplo de output está [neste arquivo](https://github.com/idwall/desafios/blo
 
 ### Extras
 
-- Tratamento de erros e exceções. Fica a seu critério quais casos deseja tratar e como serão tratados.
-- Testes unitários ou de integração.
-- Uso do Docker.
 - Parametrização da quantidade de caracteres por linha.
-- Utilizar as versões mais atuais da linguagem que escolher para desenvolver (JavaScript ES6+; Java 8; Python 3, etc).

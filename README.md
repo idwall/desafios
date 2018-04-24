@@ -13,7 +13,17 @@ Você deve forkar este projeto e fazer o *push* no seu próprio repositório e e
 
 A implementação deve ficar na pasta correspondente ao desafio. Fique à vontade para adicionar qualquer tipo de conteúdo que julgue útil ao projeto, alterar/acrescentar um README com instruções de como executá-lo, etc.
 
-**Obs.:** Você não deve fazer um Pull Request para este projeto!
+**Obs.**:
+- Você não deve fazer um Pull Request para este projeto!
+- Utilizar as versões mais atuais da linguagem que escolher para desenvolver (JavaScript ES6+; Java 8; Python 3, etc).
+
+### Extras
+
+- Descreva o processo de resolução dos desafios;
+- Descreva como utilizar a sua solução;
+- Tratamento de erros e exceções. Fica a seu critério quais casos deseja tratar e como serão tratados;
+- Testes unitários ou de integração;
+- Use o Docker.
 
 ## Carreira IDwall
 
