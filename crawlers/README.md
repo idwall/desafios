@@ -26,5 +26,6 @@ Essa parte pode ser um CLI simples, desde que a formatação da impressão fique
 ### Parte 2
 Construir um robô que nos envie essa lista via Telegram sempre que receber o comando `/NadaPraFazer [+ Lista de subrredits]` (ex.: `/NadaPraFazer programming;dogs;brazil`)
 
-
-Qualquer método para coletar os dados é válido. Caso não saiba por onde começar, procure por SeleniumHQ (Java), PhantomJS (Javascript) e Beautiful Soup (Python).
+### Dicas
+ - Use https://old.reddit.com/
+ - Qualquer método para coletar os dados é válido. Caso não saiba por onde começar, procure por JSoup (Java), SeleniumHQ (Java), PhantomJS (Javascript) e Beautiful Soup (Python).
