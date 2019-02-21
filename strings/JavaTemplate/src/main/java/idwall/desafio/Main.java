@@ -1,11 +1,11 @@
 package idwall.desafio;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import org.apache.commons.lang3.StringUtils;
+import idwall.desafio.string.IdwallFormatter;
+import idwall.desafio.string.StringFormatter;
 
 /**
  * Created by Rodrigo Catão Araujo on 06/02/2018.
@@ -13,66 +13,38 @@ import org.apache.commons.lang3.StringUtils;
 public class Main {
 
 	private static final Integer DEFAULT_LIMIT = 40;
+	private static Scanner input;
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
 		try {
-
+			input = new Scanner(System.in);
 			int maxSize;
 			try {
 				System.out.print("Digite a quantidade máxima de caracteres: ");
 				maxSize = input.nextInt();
 			} catch (InputMismatchException e) {
+				System.out.println("Quantidade inválida. Utilizando o valor: " + DEFAULT_LIMIT);
 				maxSize = DEFAULT_LIMIT; 
 			}
-
-			System.out.print("Digite a frase: ");
 			input.nextLine();
 
-			List<String> output = new ArrayList<String>();
-			List<String> currentLine = new ArrayList<String>();
-			int currentSize = 0;
-
-			while(input.hasNext()) {
-				String word = input.next();
-				if ( (currentSize + word.length() -1) >= maxSize ) {
-					int sizeLeft = maxSize - (currentSize -1);
-					int spacesPhrase = currentLine.size() - 1;
-					int spaceLenght = spacesPhrase==0?0: sizeLeft / spacesPhrase;
-					int spaceLeft = spacesPhrase==0?0: sizeLeft % spacesPhrase;
-
-					StringBuilder line = new StringBuilder();
-					for (String s : currentLine) {
-						if (line.length()!=0) {
-							line.append(StringUtils.leftPad("", (spaceLenght + (spaceLeft--<=0?0:1) + 1), ""));
-						}
-						line.append(s);
-					}
-					output.add(line.toString());
-					currentSize = 0;
-					currentLine.clear();
-					currentLine.add(word);
-					currentSize += word.length() + 1;
-
-				} else {
-					currentLine.add(word);
-					currentSize += word.length() + 1;
-				}
-
+			System.out.print("Digite a frase: ");
+			String phrase = input.nextLine();
+			
+			if (phrase == null || phrase.equals("")) {
+				return;
 			}
+			
+			StringFormatter formatter = new IdwallFormatter();
+			List<String> output = formatter.format(phrase, maxSize);
 
-			StringBuilder line = new StringBuilder();
-			for (String s : currentLine) {
-				if (line.length()!=0) {
-					line.append(" ");
-				}
-				line.append(s);
-			}
-			output.add(line.toString());
-
+			System.out.println("---");
+			System.out.println("Output:");
+			System.out.println("---");
 			for (String s : output){
 				System.out.println(s);
 			}
+			System.out.println("---");
 		} finally {
 			input.close();
 		}
