@@ -6,13 +6,31 @@
     <groupId>idwall.desafio</groupId>
     <artifactId>StringFormatter</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <encoding>UTF-8</encoding>
+        <jdk.version>1.8</jdk.version>
     </properties>
     <build>
         <plugins>
+        	<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-dependency-plugin</artifactId>
+			  <executions>
+			    <execution>
+			      <id>copy-dependencies</id>
+			      <phase>prepare-package</phase>
+			      <goals>
+			        <goal>copy-dependencies</goal>
+			      </goals>
+			      <configuration>
+			        <outputDirectory>${project.build.directory}/${project.build.finalName}.lib</outputDirectory>
+			      </configuration>
+			    </execution>
+			  </executions>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -20,6 +38,8 @@
                 <configuration>
                     <archive>
                         <manifest>
+                        	<addClasspath>true</addClasspath>
+       						<classpathPrefix>${project.build.finalName}.lib/</classpathPrefix>
                             <mainClass>idwall.desafio.Main</mainClass>
                         </manifest>
                     </archive>
@@ -27,4 +47,11 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+    	<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.0</version>
+		</dependency>
+    </dependencies>
 </project>

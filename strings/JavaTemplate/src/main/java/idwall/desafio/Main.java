@@ -1,51 +1,80 @@
 package idwall.desafio;
 
-import idwall.desafio.string.IdwallFormatter;
-import idwall.desafio.string.StringFormatter;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created by Rodrigo Catão Araujo on 06/02/2018.
  */
 public class Main {
 
-    private static final String DEFAULT_INPUT_TEXT = "In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.\n" +
-            "\n" +
-            "And God said, \"Let there be light,\" and there was light. God saw that the light was good, and he separated the light from the darkness. God called the light \"day,\" and the darkness he called \"night.\" And there was evening, and there was morning - the first day.";
-    private static final Integer DEFAULT_LIMIT = 40;
-    private static final Boolean DEFAULT_JUSTIFY = true;
+	private static final Integer DEFAULT_LIMIT = 40;
 
-    public static void main(String[] args) {
-        String text = DEFAULT_INPUT_TEXT;
-        Integer limit = DEFAULT_LIMIT;
-        Boolean justify = DEFAULT_JUSTIFY;
-        switch (args.length) {
-            case 1:
-                text = args[0];
-                break;
-            case 2:
-                text = args[0];
-                limit = Integer.parseInt(args[1]);
-                break;
-            case 3:
-                text = args[0];
-                limit = Integer.parseInt(args[1]);
-                justify = Boolean.parseBoolean(args[2]);
-                break;
-        }
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		try {
 
-        // Print input data
-        System.out.println("Inputs: ");
-        System.out.println("Text: " + text);
-        System.out.println("Limit: " + limit);
-        System.out.println("Should justify: " + justify);
-        System.out.println("=========================");
+			int maxSize;
+			try {
+				System.out.print("Digite a quantidade máxima de caracteres: ");
+				maxSize = input.nextInt();
+			} catch (InputMismatchException e) {
+				maxSize = DEFAULT_LIMIT; 
+			}
 
-        // Run IdwallFormatter
-        final StringFormatter sf = new IdwallFormatter();
-        String outputText = sf.format(text);
+			System.out.print("Digite a frase: ");
+			input.nextLine();
 
-        // Print output text
-        System.out.println("Output: ");
-        System.out.println(outputText);
-    }
+			List<String> output = new ArrayList<String>();
+			List<String> currentLine = new ArrayList<String>();
+			int currentSize = 0;
+
+			while(input.hasNext()) {
+				String word = input.next();
+				if ( (currentSize + word.length() -1) >= maxSize ) {
+					int sizeLeft = maxSize - (currentSize -1);
+					int spacesPhrase = currentLine.size() - 1;
+					int spaceLenght = spacesPhrase==0?0: sizeLeft / spacesPhrase;
+					int spaceLeft = spacesPhrase==0?0: sizeLeft % spacesPhrase;
+
+					StringBuilder line = new StringBuilder();
+					for (String s : currentLine) {
+						if (line.length()!=0) {
+							line.append(StringUtils.leftPad("", (spaceLenght + (spaceLeft--<=0?0:1) + 1), ""));
+						}
+						line.append(s);
+					}
+					output.add(line.toString());
+					currentSize = 0;
+					currentLine.clear();
+					currentLine.add(word);
+					currentSize += word.length() + 1;
+
+				} else {
+					currentLine.add(word);
+					currentSize += word.length() + 1;
+				}
+
+			}
+
+			StringBuilder line = new StringBuilder();
+			for (String s : currentLine) {
+				if (line.length()!=0) {
+					line.append(" ");
+				}
+				line.append(s);
+			}
+			output.add(line.toString());
+
+			for (String s : output){
+				System.out.println(s);
+			}
+		} finally {
+			input.close();
+		}
+	}
 }
