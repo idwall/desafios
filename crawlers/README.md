@@ -20,7 +20,7 @@ Consideramos como bombando *threads* com 5000 pontos ou mais.
 - Lista com nomes de subreddits separados por ponto-e-vírgula (`;`). Ex: "askreddit;worldnews;cats"
 
 ### Parte 1
-Gerar e imprimir uma lista contendo número de upvotes, subreddit, título da thread, link para os comentários da thread, link da thread.
+Gerar e imprimir uma lista contendo a pontuação, subreddit, título da thread, link para os comentários da thread e link da thread.
 Essa parte pode ser um CLI simples, desde que a formatação da impressão fique legível.
 
 ### Parte 2
