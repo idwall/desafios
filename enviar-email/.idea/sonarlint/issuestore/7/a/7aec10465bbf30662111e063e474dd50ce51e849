@@ -1,0 +1,15 @@
+
+:squid:S1643:"Use a StringBuilder instead.(›‡şª8ÈÍÖş¿-
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(²é­æúÿÿÿÿ8ÈÍÖş¿-
+À%squid:RedundantThrowsDeclarationCheck*"‰Remove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(öÕÜûûÿÿÿÿ
+»%squid:RedundantThrowsDeclarationCheck]"‰Remove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(†µğ
+:squid:S16435"Use a StringBuilder instead.(ÇÅ·º8ÈÍÖş¿-
+Osquid:S1197"8Move the array designator from the variable to the type.(…¢¨ã
+»%squid:RedundantThrowsDeclarationCheck"‰Remove the declaration of thrown exception 'javax.mail.internet.AddressException' which is a subclass of 'javax.mail.MessagingException'.(…¢¨ã
+isquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(Ë€Ìã8ˆ ·ÿ¿-
+rsquid:S2068a"V'Password' detected in this expression, review this potentially hard-coded credential.(ÿ‹¯€ùÿÿÿÿ
+T
+squid:S106h"9Replace this use of System.out or System.err by a logger.(õÀ¸Œşÿÿÿÿ
+isquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(íó¢¤8çû·ÿ¿-
+isquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(¡Õ±š8çû·ÿ¿-
