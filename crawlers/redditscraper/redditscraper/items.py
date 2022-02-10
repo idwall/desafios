@@ -10,5 +10,5 @@ class RedditTopThreadsScraperItem(scrapy.Item):
     score = scrapy.Field()
     subreddit = scrapy.Field()
     title = scrapy.Field()
-    image_url = scrapy.Field()
+    source_url = scrapy.Field()
     comments_url = scrapy.Field()
