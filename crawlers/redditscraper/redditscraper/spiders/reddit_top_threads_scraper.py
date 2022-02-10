@@ -48,7 +48,7 @@ class RedditTopThreadsScraper(scrapy.Spider):
             subreddit = thread.css("div::attr(data-subreddit)").get()
             title = thread.css("a.title::text").get()
             comments_url = thread.css("div::attr(data-permalink)").get()
-            image_url = thread.css("div::attr(data-url)").get()
+            source_url = thread.css("div::attr(data-url)").get()
     
             if int(score) >= 5000:
                 reddit_top_threads_item = RedditTopThreadsScraperItem()
@@ -56,7 +56,7 @@ class RedditTopThreadsScraper(scrapy.Spider):
                 reddit_top_threads_item["subreddit"] = subreddit
                 reddit_top_threads_item["title"] = title
                 reddit_top_threads_item["comments_url"] = f"{reddit_domain}{comments_url}"
-                reddit_top_threads_item["image_url"] = image_url
+                reddit_top_threads_item["source_url"] = source_url
                 all_items.append(reddit_top_threads_item)
         
         yield dict(subreddit_title=subreddit_title, items=all_items)
