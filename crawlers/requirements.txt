@@ -1,2 +1,2 @@
 priority==1.3.0
-Scrapy==2.5.0
+Scrapy==2.5.1
