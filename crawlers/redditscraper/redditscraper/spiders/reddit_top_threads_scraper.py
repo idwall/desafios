@@ -17,9 +17,13 @@ class RedditTopThreadsScraper(scrapy.Spider):
     filter = "top"
     base_url = "https://old.reddit.com/r"
 
+    # def __init__(self, subreddits=None):
+    #     super(RedditTopThreadsScraper, self).__init__(subreddits)
+    #     self.subreddits = subreddits
+
     def start_requests(self):
         subreddits = getattr(self, 'subreddits', None)
-        if subreddits is not None:
+        if subreddits:
             subreddits_list = subreddits.split(";")
             for subreddit in subreddits_list:
                 url = f"{self.base_url}/{subreddit}/{self.filter}"
