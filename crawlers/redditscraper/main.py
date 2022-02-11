@@ -2,6 +2,7 @@ from asyncio import subprocess
 import json
 import os
 
+from decouple import config
 from scrapy.crawler import CrawlerRunner
 from scrapy.utils.log import configure_logging
 from telegram import Update
@@ -9,6 +10,9 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 from twisted.internet import reactor, defer
 
 from redditscraper.spiders.reddit_top_threads_scraper import RedditTopThreadsScraper
+
+
+TELEGRAM_BOT_TOKEN = config("TELEGRAM_BOT_TOKEN")
 
 
 configure_logging()
@@ -62,7 +66,7 @@ def send_reddit_top_threads(update: Update, context: CallbackContext) -> None:
 
 
 def main():
-    updater = Updater('5167354451:AAFeL-wda_XwqnXO_hgTR8UQUQrhDEH02QQ')
+    updater = Updater(TELEGRAM_BOT_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('top', send_reddit_top_threads))
     updater.start_polling()
